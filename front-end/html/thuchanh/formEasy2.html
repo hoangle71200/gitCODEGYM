@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormEasy</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        .bg{
+            background-color: rgb(230, 224, 141);
+            width: 800px;
+            height: 500px;
+            margin: 100px auto;
+        }
+        .box{
+            background-color:aquamarine;
+            width: 780px;
+            height: 40px;
+            position: relative;
+            top: 7%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: blue;
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+        }
+        .formNhap{
+            background-color:rgb(230, 224, 141);
+            width: 780px;
+            height: 430px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            color: black;
+        }
+        td, th {
+
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="box">
+            <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+        </div>
+        <div class="formNhap">
+            <form action="">
+                <table>
+                    <tr>
+                        <td><span>Họ và tên</span></td>
+                        <td ><input type="text" size="30" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><span>Ngày sinh</span></td>
+                        <td ><input type="datetime"  name="birthday"></td>
+                    </tr>
+                    <tr>
+                        <td>Giới tính</td>
+                        <td>
+                            <section>
+                                <input type="radio" name="sex" value="nam">Nam
+                                <input type="radio" name="sex" value="nam">Nữ
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ</td>
+                        <td>
+                            <textarea name="diachi"  cols="30" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lớp</td>
+                        <td>
+                            <select name="lop">
+                                <option>----Chọn lớp----</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Email</span></td>
+                        <td ><input type="text" size="30" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><span>Điện thoại</span></td>
+                        <td ><input type="tel" size="30" name="phone"></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td></td>
+                        <td>                
+                            <input type="submit" value="Đăng ký">
+                            <input type="reset" value="Nhập lại">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

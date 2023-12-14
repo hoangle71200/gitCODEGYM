@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormEasy</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .bg{
+            background-color: white;
+            width: 800px;
+            height: 400px;
+            margin: 100px auto;
+        }
+        .box{
+            background-color: rgb(237, 45, 74);
+            width: 780px;
+            height: 40px;
+            position: relative;
+            top: 7%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: aliceblue;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+        }
+        .formNhap{
+            background-color:white;
+            width: 780px;
+            height: 330px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="box">
+            <h1>Sở thích của bạn</h1>
+        </div>
+        <div class="formNhap">
+            <form action="">
+                <span>Họ và tên</span><input type="text" size="30" name="name">
+                <br>
+                <br>
+                <span>Email</span><input type="text" size="30" name="email">
+                <br>
+                <br>
+                <section>Sở thích
+                    <input type="checkbox"  name="thethao">Thể thao
+                    <input type="checkbox"  name="annhac">Âm nhạc
+                    <input type="checkbox"  name="docsachh">Đọc sách
+                    <input type="checkbox"  name="luotweb">Lướt web
+                    <input type="checkbox"  name="choigame">Chơi game
+                    <input type="checkbox"  name="dienanh">Điện ảnh
+                    <input type="checkbox"  name="dulich">Du lịch
+                </section>
+                <br>
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
