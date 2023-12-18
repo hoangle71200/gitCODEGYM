@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../js/C7BTchuyentienJS.js"></script>
+</head>
+<body>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <th>Amount</th>
+                    <th colspan="2">From Currency T0 Currency</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><input size="20" type="text" name="amount" placeholder="nhập số tiền" id="amount"></th>
+                    <th>
+                        <select name="typeMoney1" id="typeMoney1">
+                            <option value="USD">USD</option>
+                            <option value="VND">VND</option>
+                        </select>
+                    </th>
+                    <th>
+                        <select name="typeMoney2" id="typeMoney2">
+                            <option value="USD">USD</option>
+                            <option value="VND">VND</option>
+                        </select>
+                    </th>
+                    <th>
+                        <button onclick="convertMoney()">Convert</button>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
