@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imgID" src="2.png" style="position: relative;top: 0px;left: 0px">
+    <h1>Do you love me?</h1>    
+    <button onclick="alert('Yes. I am')">Yes</button>
+    <button style="position: relative;top: 0px;left: 0px" id="noBtnID" onmouseover="run()">No</button>
+</body>
+</html>
+
+<script>
+    let noBtn = document.getElementById('noBtnID');
+    function run () {
+        noBtn.style.left =(Math.random() * 900) + 'px';
+        noBtn.style.top =(Math.random() * 450) + 'px';
+    }
+
+    let element = document.getElementById("imgID");
+    function upImg() {
+        element.style.top = parseInt(element.style.top) - 50 + 'px';
+    }
+    function downImg() {
+        element.style.top = parseInt(element.style.top) + 50 + 'px';
+    }
+    function leftImg() {
+        element.style.left = parseInt(element.style.left) - 50 + 'px';
+    }
+    function rightImg() {
+        element.style.left = parseInt(element.style.left) + 50 + 'px';
+    }
+
+    function loadKey (key) {
+        switch (key.keyCode) {
+            case 37:
+                leftImg();
+                break;
+            case 39:
+                rightImg();
+                break;
+            case 38:
+                upImg();
+                break;
+            case 40:
+                downImg();
+                break;
+        }
+    }
+
+    window.addEventListener('keydown', loadKey)
+</script>

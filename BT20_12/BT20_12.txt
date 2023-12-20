@@ -1,0 +1,21 @@
+Bài Tập Sử Dụng Cấu Trúc Điều Kiện
+
+Nhập vào số tháng và hiển thị xem tháng đó có bao nhiêu ngày.
+
+Chương trình Phân loại Tuổi:
+Người dùng nhập vào tuổi của một người, và chương trình sẽ phân loại họ là trẻ em, thiếu niên, người trưởng thành, hoặc người cao tuổi dựa trên các ngưỡng tuổi cụ thể.
+
+Tính Giá Vé Xem Phim:
+Viết một chương trình để tính giá vé xem phim dựa trên độ tuổi của người xem (giá vé cho trẻ em, người lớn, và người cao tuổi).
+
+Chọn Món Ăn:
+Tạo một chương trình cho phép người dùng chọn loại món ăn (chay, thịt, hải sản) và sau đó cung cấp một gợi ý món ăn tương ứng.
+
+Phân loại Mùa trong Năm:
+Dựa trên tháng được nhập vào, chương trình sẽ phân loại mùa hiện tại (Xuân, Hạ, Thu, Đông).
+
+Chương trình Tính Điểm Thưởng:
+Người dùng nhập vào số lượng tiền họ chi tiêu và chương trình tính toán số điểm thưởng dựa trên các ngưỡng chi tiêu cụ thể.
+
+Chương trình Đánh giá Điều kiện Thời tiết:
+Người dùng nhập vào nhiệt độ hiện tại, và chương trình sẽ đánh giá thời tiết là lạnh, mát mẻ, ấm áp, hay nóng.
