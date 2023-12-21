@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th><input type="text" name="" id="amountID"></th>
+            <th><select name="txtFrom" id="fromID">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select></th>
+            <th><select name="txtTo" id="toID">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select></th>
+            <th><button onclick="convert()">Convert</button></th>
+        </tr>
+        <tr>
+            <td colspan="4">Result: <span id="resultID"></span></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<script src="chuyentien.js"></script>

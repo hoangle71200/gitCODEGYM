@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="amountID" value="abc">
+    <p id="demoID">Demo</p>
+    <button onclick="submit()">Submit</button>
+</body>
+</html>
+
+<script src="jsTest.js"></script> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="myP">I am a paragraph.</p>
+
+<p>The content of "myP" is:</p>
+<p id="demo">I am the world ender</p>
+<button onclick="change()">Change</button>
+
+<script>
+function change() {
+    let html = document.getElementById("myP").innerHTML;
+    let demo = document.getElementById("demo").innerHTML;
+    if (demo === 'I am a paragraph.')
+    document.getElementById("demo").innerHTML = 'I am the world ender';
+    else if (demo === 'I am the world ender')
+    document.getElementById("demo").innerHTML = 'I am a paragraph.';
+}
+</script>
+
+</body>
+</html>
