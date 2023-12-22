@@ -1,0 +1,38 @@
+
+.box1{
+width: 800px;
+height: 800px;
+position: relative;
+left: 50%;
+transform: translate(-50%);
+background-image: url('https://tse1.mm.bing.net/th?id=OIP.67D4rSVwhur1MuIX8CeNgAHaHa&pid=Api&P=0&h=220');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.box2{
+background: rgb(255, 255, 255);
+width: 400px;
+height: 550px;
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.box3{
+    background: rgb(255, 255, 255);
+    width: 150px;
+    height: 300px;
+    position: relative;
+    left: 20px;
+}
+
+.box4{
+    background: rgb(255, 255, 255);
+    width: 150px;
+    height: 300px;
+    position: relative;
+    left: 60px;
+    }
