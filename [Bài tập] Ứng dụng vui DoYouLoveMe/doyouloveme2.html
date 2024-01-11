@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Do you love me?</h1>
+    <button id="yesID" onclick="alert('Congratulations! You already have a boyfriend')">YES</button>
+    <button id="noID" onmouseover="run()" style="left: 0px; top: 0px; position: relative;">NO</button>
+</body>
+</html>
+
+<!-- <script src="doyouloveme2.js"></script> -->
+
+<script>
+    function run () {
+    let inpE = document.getElementById('noID');
+    inpE.style.left = (Math.random()*500) + 'px';
+    inpE.style.top = (Math.random()*500) + 'px';
+}
+</script>

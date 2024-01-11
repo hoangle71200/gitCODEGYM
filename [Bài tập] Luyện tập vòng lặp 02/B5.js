@@ -1,14 +1,17 @@
 
+let tienbandau = parseInt(prompt('Mời nhập số tiền ban đầu: '));
+let thangchovay = parseInt(prompt('Mời nhập số tháng cho vay: '));
+let laihangthang = parseFloat(prompt('Mời nhập số lãi hàng tháng: '));
+console.log('Số tiền ban đầu là:' + tienbandau)
+console.log('Số tháng cho vay là:' + thangchovay)
+console.log('Số lãi hàng tháng là:' + laihangthang)
 
-let fibo = 0;
-let fibo1 = 1;
-tong = 0;
+for (let i=1; i<=thangchovay; i++) {
+    tienbandau = tienbandau + tienbandau * laihangthang;
+    console.log('Tháng' + i)
+    console.log('Số tiền hiện tại:' + tienbandau);
 
-for (let i = 0; i<20; i++) {
-    tong = tong + fibo;
-    temp = fibo + fibo1;
-    fibo = fibo1;
-    fibo1 = temp;
 }
-console.log(tong)
+
+
 

@@ -9,7 +9,7 @@ for (let i=0; i<rong; i++) {
 console.log(outputRong);
 outputRong = '';
 
-for(let i=1; i<cao; i++) {
+for(let i=1; i<(cao-1); i++) {
     for (let i=0; i<rong; i++) {
         if (i == 0 || i == (rong-1)) {
             outputRong = outputRong + '*';
@@ -26,6 +26,4 @@ for (let i=0; i<rong; i++) {
 console.log(outputRong);
 outputRong = '';
 
-document.writeln('abc<br>');
-document.writeln('def');
 

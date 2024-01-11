@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 80px ;
+            height: 30px;
+            background-color: rgb(0, 133, 44);
+            border-radius: 15%;
+            color: aliceblue;
+        }
+        input{
+            height: 30px;
+        }
+        td{
+            width: 100px;
+            height: 40px;
+        }
+        .tdOne{
+            width: 300px;
+            height: 40px;
+        }
+        th{
+            text-align: left;
+        }
+        tr:nth-child(even){
+            background-color: aquamarine;
+        }
+        table{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Add new Product</h1>
+    </div>
+
+    <div>
+            <input type="text" name="txtNewProduct" id="newProductID" placeholder="New Product">
+            <button onclick="addP()">Add</button>
+    </div>
+    <div>
+        <h1>Display All Product</h1>
+    </div>
+
+    <div>
+            <table>
+                <tr>
+                    <th aria-setsize="100px">Product Name</th>
+                    <th><span id="countProductID">Prd</span></th>
+                </tr>
+            </table>
+            <table id="nameProduciID">
+
+            </table>
+    </div>
+
+</body>
+</html>
+
+<script src="udQLSP.js"></script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <canvas id="myCanvas" width="500" height="500" style="border: 1px solid darkgoldenrod;">
+        Canvas</canvas>
+    </div>
+    <script>
+        let c = document.getElementById('myCanvas');
+        let ctx = c.getContext('2d');
+        function draw (x, y) {
+            if (x === 450) {
+                speed = -5;
+            }
+            if (x === 0) {
+                speed = 5;
+            }
+            ctx.fillRect(x, y, 50, 50);
+        }
+        function clear () {
+            ctx.clearRect(0, 0, 500, 500);
+        }
+        let x=0;
+        let y=0;
+        let speed = 5;
+        function start () {
+            console.log(1);
+            clear();
+            draw(x,y);
+            x += speed;
+        }
+        setInterval(start, 60);
+    </script>
+</body>
+</html>

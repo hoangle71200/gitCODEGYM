@@ -32,9 +32,8 @@ let courses = [
 //     console.log(a, course)
 // })
 
-var isFree = courses.filter(function (course, index) {
-    console.log(index)
-    return course.name === 'Ruby'
-    
+var isFree = courses.map(function (course) {
+    return this.course = course;
 })
 console.log(isFree)
+
